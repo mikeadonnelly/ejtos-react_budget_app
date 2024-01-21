@@ -7,6 +7,7 @@ const AllocationForm = (props) => {
     const [name, setName] = useState('');
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
+    const currencyPrefix = '£';
 
     const submitEvent = () => {
 
@@ -63,6 +64,7 @@ const AllocationForm = (props) => {
                         required='required'
                         type='number'
                         id='cost'
+                        placeholder={`${currencyPrefix} Amount`}
                         value={cost}
                         style={{ marginLeft: '2rem' , size: 10}}
                         onChange={(event) => setCost(event.target.value)}>

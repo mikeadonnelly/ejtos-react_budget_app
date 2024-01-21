@@ -10,6 +10,7 @@ const Remaining = () => {
         <div className={`alert ${alertType}`}>
             <span>Remaining: £{budget - totalExpenses}</span>
         </div>
+        
     );
 };
 export default Remaining;
